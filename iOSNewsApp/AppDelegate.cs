@@ -18,9 +18,12 @@ namespace iOSNewsApp
 
 		public override bool FinishedLaunching(UIApplication application, NSDictionary launchOptions)
 		{
-			// Override point for customization after application launch.
-			// If not required for your application you can safely delete this method
-
+            // Override point for customization after application launch.
+            // If not required for your application you can safely delete this method
+            var newsViewController = new NewsViewController();
+            var nav = new UINavigationController(newsViewController);
+            //nav.NavigationController.PushViewController(newsViewController, true);
+            Window.RootViewController= nav;
 			return true;
 		}
 
