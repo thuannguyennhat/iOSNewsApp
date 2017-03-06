@@ -101,6 +101,7 @@
     <Folder Include="Services\" />
     <Folder Include="Screens\News\" />
     <Folder Include="Screens\Details\" />
+    <Folder Include="Definitions\Models\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
@@ -122,6 +123,9 @@
     <Compile Include="Screens\Details\DetailsViewController.designer.cs">
       <DependentUpon>DetailsViewController.cs</DependentUpon>
     </Compile>
+    <Compile Include="Definitions\Models\News.cs" />
+    <Compile Include="Services\ReadXMLServices.cs" />
+    <Compile Include="Definitions\Models\RSSModel.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath)\Xamarin\iOS\Xamarin.iOS.CSharp.targets" />
 </Project>
