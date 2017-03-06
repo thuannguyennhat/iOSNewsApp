@@ -104,7 +104,6 @@
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
-    <InterfaceDefinition Include="Main.storyboard" />
     <InterfaceDefinition Include="Screens\News\NewsViewController.xib" />
     <InterfaceDefinition Include="Screens\Details\DetailsViewController.xib" />
   </ItemGroup>
@@ -115,10 +114,6 @@
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AppDelegate.cs" />
-    <Compile Include="ViewController.cs" />
-    <Compile Include="ViewController.designer.cs">
-      <DependentUpon>ViewController.cs</DependentUpon>
-    </Compile>
     <Compile Include="Screens\News\NewsViewController.cs" />
     <Compile Include="Screens\News\NewsViewController.designer.cs">
       <DependentUpon>NewsViewController.cs</DependentUpon>
