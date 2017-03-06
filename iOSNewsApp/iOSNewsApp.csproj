@@ -99,12 +99,14 @@
     <Folder Include="Screens\" />
     <Folder Include="Definitions\" />
     <Folder Include="Services\" />
+    <Folder Include="Screens\News\" />
+    <Folder Include="Screens\Details\" />
   </ItemGroup>
   <ItemGroup>
     <InterfaceDefinition Include="LaunchScreen.storyboard" />
     <InterfaceDefinition Include="Main.storyboard" />
-    <InterfaceDefinition Include="Screens\NewsViewController.xib" />
-    <InterfaceDefinition Include="Screens\DetailsViewController.xib" />
+    <InterfaceDefinition Include="Screens\News\NewsViewController.xib" />
+    <InterfaceDefinition Include="Screens\Details\DetailsViewController.xib" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Info.plist" />
@@ -117,12 +119,12 @@
     <Compile Include="ViewController.designer.cs">
       <DependentUpon>ViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="Screens\NewsViewController.cs" />
-    <Compile Include="Screens\NewsViewController.designer.cs">
+    <Compile Include="Screens\News\NewsViewController.cs" />
+    <Compile Include="Screens\News\NewsViewController.designer.cs">
       <DependentUpon>NewsViewController.cs</DependentUpon>
     </Compile>
-    <Compile Include="Screens\DetailsViewController.cs" />
-    <Compile Include="Screens\DetailsViewController.designer.cs">
+    <Compile Include="Screens\Details\DetailsViewController.cs" />
+    <Compile Include="Screens\Details\DetailsViewController.designer.cs">
       <DependentUpon>DetailsViewController.cs</DependentUpon>
     </Compile>
   </ItemGroup>
