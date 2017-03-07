@@ -1,6 +1,7 @@
 ﻿using System;
-
+using Foundation;
 using UIKit;
+using WebKit;
 
 namespace iOSNewsApp
 {
@@ -14,6 +15,9 @@ namespace iOSNewsApp
 		{
 			base.ViewDidLoad();
 			// Perform any additional setup after loading the view, typically from a nib.
+			var url = new NSUrl("http://vnexpress.net/");
+			var request = new NSUrlRequest(url);
+			myWebView.LoadRequest(request);
 		}
 
 		public override void DidReceiveMemoryWarning()
